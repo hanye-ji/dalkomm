@@ -1,0 +1,292 @@
+@charset "utf-8";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "GoldPlay";
+  src: url(fonts/Goldplay\ Alt\ Bold.otf);
+}
+.inner {
+  width: 1444px;
+  margin: auto;
+}
+body {
+  width: 100%;
+  font-family: "Nanumsquare";
+  color: #222;
+}
+header {
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+header .logo {
+  float: left;
+  height: 120px;
+  margin-right: 220px;
+}
+header .logo a {
+  line-height: 120px;
+}
+header .logo img {
+  width: 120px;
+}
+header nav {
+  float: left;
+  font-size: 18px;
+}
+header nav > ul > li {
+  float: left;
+}
+header nav > ul > li > a {
+  display: block;
+  height: 120px;
+  padding: 0 44px;
+  line-height: 120px;
+  font-weight: 500;
+}
+header nav > ul > li > a span {
+  position: relative;
+}
+header nav > ul > li > a span::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -44px;
+  background: #ff592e;
+  width: 0;
+  height: 2px;
+  transition: width 0.2s;
+}
+header nav > ul > li > a:hover span::after {
+  width: 100%;
+  color: #ff592e;
+}
+header nav > ul > li > a:hover span {
+  color: #ff592e;
+}
+header nav > ul > li > a .shop {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 18px;
+  border-radius: 14px;
+  background: #ff592e;
+  color: #fff;
+}
+header nav > ul > li > a:hover .shop {
+  color: #fff;
+}
+header nav .sidemenu {
+  display: none;
+  background: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  padding: 40px 0 40px 44px;
+}
+header nav .sidemenu li a {
+  display: block;
+  line-height: 43px;
+}
+main {
+  width: 100%;
+  height: 1048px;
+  margin-left: 230px;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+.tabMenuWrap {
+  position: relative;
+  width: 100%;
+  margin: 226px 76px 0;
+}
+.tabMenu {
+  float: left;
+}
+input[type="radio"] {
+  display: none;
+}
+.tabMenu label {
+  display: block;
+  padding-right: 160px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #ccc;
+}
+.tabMenu label:hover {
+  color: #222;
+}
+.tabMenu input:checked + label {
+  color: #222;
+}
+.tabMenu input:checked ~ .tab {
+  display: block;
+}
+.tab {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 1288px;
+  height: 757px;
+  margin-top: 100px;
+}
+.tab li {
+  float: left;
+  width: 280px;
+  height: 328px;
+  margin: 0 0 100px 55px;
+}
+.tab li:nth-of-type(4n-3) {
+  margin-left: 0;
+}
+.tab li img {
+  width: 280px;
+}
+.tab li p {
+  padding-top: 23px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+}
+footer {
+  width: 100%;
+  padding: 120px 76px;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+.foottop p {
+  float: left;
+}
+.foottop p img {
+  width: 192px;
+}
+.foottop > ul {
+  float: right;
+}
+.foottop > ul > li {
+  float: left;
+}
+.foottop > ul > li:nth-of-type(2) {
+  margin: 0 207px;
+}
+.foottop .maintitle {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.foottop .footmenu {
+  margin-top: 32px;
+}
+.foottop .footmenu li {
+  margin-top: 16px;
+}
+.foottop .footmenu li a {
+  line-height: 24px;
+  color: rgba(34, 34, 34, 0.7);
+}
+.foottop .footmenu li a span {
+  position: relative;
+}
+.foottop .footmenu li a span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #222;
+  width: 0;
+  height: 1px;
+  transition: width 0.5s;
+}
+.foottop .footmenu li a:hover span::after {
+  width: 100%;
+}
+.foottop .footmenu li a:hover span {
+  color: #222;
+}
+.foottop .footmenu .orange {
+  color: #ff592e;
+}
+.foottop .footmenu li a .orange::after {
+  background: #ff592e;
+}
+.foottop .footmenu li a:hover .orange {
+  color: #ff592e;
+}
+.footbot {
+  height: 256px;
+  margin-top: 52px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.footbot select {
+  position: relative;
+  width: 307px;
+  height: 87px;
+  margin-top: 23px;
+  border-bottom: 2px solid #222;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 87px;
+  text-align: left;
+  background: #fff url(../images/select-plus.svg) no-repeat 100% 50%;
+  background-size: 24px 24px;
+}
+.footbot select:focus {
+  outline: none;
+}
+.footbot > div {
+  float: right;
+}
+.footbot address {
+  width: 614px;
+  margin: 52px 0 35px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: rgba(34, 34, 34, 0.4);
+}
+.footbot address a {
+  color: #222;
+  font-weight: normal;
+}
+.footbot .playstore {
+  position: relative;
+}
+.footbot .playstore p {
+  float: left;
+}
+.footbot .playstore p .play {
+  display: block;
+  margin-right: 12px;
+  padding: 0 32px;
+  border: 1px solid rgba(34, 34, 34, 0.1);
+  border-radius: 25px;
+  font-weight: bold;
+  line-height: 50px;
+}
+.footbot .playstore p .play::before {
+  content: "";
+  display: inline-block;
+  margin-right: 13px;
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+}
+.footbot .playstore p:first-of-type a::before {
+  background: url(../images/apple.svg) no-repeat;
+}
+.footbot .playstore p:nth-of-type(2) a::before {
+  background: url(../images/google.svg) no-repeat;
+}
+.footbot .playstore p:last-of-type {
+  position: absolute;
+  top: -50%;
+  right: 106px;
+}
+.footbot .playstore p img {
+  width: 100px;
+}

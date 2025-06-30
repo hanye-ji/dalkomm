@@ -1,0 +1,528 @@
+@charset "utf-8";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "GoldPlay";
+  src: url(fonts/Goldplay\ Alt\ Bold.otf);
+}
+.inner {
+  width: 1444px;
+  margin: auto;
+}
+body {
+  width: 100%;
+  font-family: "Nanumsquare";
+  color: #222;
+}
+header {
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+header .logo {
+  float: left;
+  height: 120px;
+  margin-right: 220px;
+}
+header .logo a {
+  line-height: 120px;
+}
+header .logo img {
+  width: 120px;
+}
+header nav {
+  float: left;
+  font-size: 18px;
+}
+header nav > ul > li {
+  float: left;
+}
+header nav > ul > li > a {
+  display: block;
+  height: 120px;
+  padding: 0 44px;
+  line-height: 120px;
+  font-weight: 500;
+}
+header nav > ul > li > a span {
+  position: relative;
+}
+header nav > ul > li > a span::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -44px;
+  background: #ff592e;
+  width: 0;
+  height: 2px;
+  transition: width 0.2s;
+}
+header nav > ul > li > a:hover span::after {
+  width: 100%;
+  color: #ff592e;
+}
+header nav > ul > li > a:hover span {
+  color: #ff592e;
+}
+header nav > ul > li > a .shop {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 18px;
+  border-radius: 14px;
+  background: #ff592e;
+  color: #fff;
+}
+header nav > ul > li > a:hover .shop {
+  color: #fff;
+}
+header nav .sidemenu {
+  display: none;
+  background: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  padding: 40px 0 40px 44px;
+}
+header nav .sidemenu li a {
+  display: block;
+  line-height: 43px;
+}
+.title {
+  color: #f43b00;
+  font-weight: bold;
+}
+.button {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+}
+.more {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  font-size: 17px;
+  font-weight: 600;
+  color: #222;
+}
+.more::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 8px;
+  margin-left: 12px;
+  padding: 3px 0;
+  background: url(../images/arrow_right.png) no-repeat;
+}
+.main1 {
+  position: relative;
+  width: 100%;
+  height: 1081px;
+  background: url(../images/tms_img_20250311122700_2.png) no-repeat;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+.main1 section {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 207px;
+  color: #f43b00;
+}
+.main1 section h2 {
+  line-height: 81px;
+  font-size: 54px;
+}
+.main1 section p a {
+  margin-top: 52px;
+  padding: 20px 48px;
+  border: 1px solid #f43b00;
+}
+.main2 {
+  width: 100%;
+  height: 960px;
+  background: url(../images/bg_news-item.png) 0 0 no-repeat;
+  background-size: 774px 888px;
+}
+.main2 section {
+  float: left;
+  position: relative;
+  padding: 120px 0 0 207px;
+}
+.main2 section h2 {
+  margin-top: 20px;
+  font-size: 65px;
+  line-height: 97px;
+}
+.main2 section p {
+  width: 470px;
+  margin: 30px 0 170px;
+  font-size: 26px;
+  line-height: 40px;
+  color: #1a1a1a;
+}
+.main2 .menulist {
+  float: right;
+}
+.main2 .menulist div {
+  float: left;
+  width: 297px;
+  margin: 100px 50px 0 0;
+  text-align: center;
+}
+.main2 .menulist img {
+  width: 186px;
+  padding-top: 144px;
+}
+.main2 .menulist dl dt {
+  margin: 36px 0 20px;
+  color: #f43b00;
+  line-height: 24px;
+}
+.main2 .menulist dl dt span {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.main2 .menulist dl dd {
+  color: #252525;
+  line-height: 24px;
+}
+.main3 {
+  width: 100%;
+  height: 751px;
+  padding-top: 160px;
+  background: url(../images/bg_signature-item.png) 100% 0 no-repeat;
+  background-size: 1103px 751px;
+}
+.main3 section h2 {
+  font-family: "GoldPlay";
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+.main3 section p {
+  width: 470px;
+  margin-bottom: 30px;
+  font-size: 26px;
+  color: #1a1a1a;
+  line-height: 40px;
+  font-weight: 300;
+}
+.main3 section p strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 28px;
+  font-weight: 700;
+}
+.main3 section p a {
+  margin: 30px 0 0;
+  padding: 14px 56px;
+  border: 1px solid #f43b00;
+  color: #f43b00;
+}
+.main4 {
+  position: relative;
+}
+.main4 div {
+  height: 134px;
+  margin-bottom: 134px;
+  border-bottom: 17px solid #f0eae8;
+}
+.main4 section {
+  margin-bottom: 124px;
+}
+.main4 section h2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 562px;
+  height: 252px;
+  margin: auto;
+  font-family: "GoldPlay";
+  font-size: 81px;
+  text-align: center;
+  line-height: 252px;
+  background: #fff;
+}
+.main4 section ul li {
+  float: left;
+  width: 468px;
+  padding: 28px 25px 50px;
+  border: 2px solid #f43b00;
+}
+.main4 section ul li:nth-of-type(2) {
+  margin: 0 20px;
+}
+.main4 section ul li a {
+  display: block;
+}
+.main4 section ul li a img {
+  display: block;
+  width: 414px;
+}
+.main4 section ul li a span {
+  display: block;
+  margin-top: 40px;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #f43b00;
+}
+.main4 section ul li a strong {
+  display: block;
+  margin: 24px 0 20px;
+  font-size: 43px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #f43b00;
+}
+.main5 {
+  width: 100%;
+  height: 688px;
+  background: url(../images/bg_supporter.jpg) 100% 0 no-repeat;
+}
+.main5 section h2 {
+  padding-top: 120px;
+  font-size: 58px;
+  line-height: 75px;
+  letter-spacing: -0.25px;
+  font-weight: 800;
+}
+.main5 section p:first-of-type {
+  margin-top: 30px;
+  font-size: 26px;
+  line-height: 40px;
+}
+.main5 section p a {
+  margin-top: 60px;
+  padding: 14px 56px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #282828;
+  border: 1px solid #282828;
+}
+.main6 {
+  width: 100%;
+  height: 574px;
+}
+.main6 section {
+  float: left;
+  width: 50%;
+  height: 574px;
+}
+.main6 section h2 {
+  margin-top: 146px;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 90px;
+}
+.main6 section p:first-of-type {
+  margin-top: 32px;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 35px;
+}
+.main6 .order {
+  padding-left: 207px;
+  background: url(../images/bg_smartphone.png) 93% 165% no-repeat;
+  background-color: #f0eae8;
+  background-size: 382px 481px;
+}
+.main6 .order p:first-of-type {
+  color: #f43b00;
+}
+.main6 .order p:last-of-type {
+  margin-top: 88px;
+}
+.main6 .store {
+  padding-left: 196px;
+  background: url(../images/bg_finder.png) 100% 100% no-repeat;
+  background-color: #f43b00;
+  background-size: 289px 284px;
+}
+.main6 .store h2 {
+  color: #ffffff;
+}
+.main6 .store p {
+  color: #ffffff;
+}
+.main6 .store .search {
+  position: relative;
+  width: 273px;
+  height: 63px;
+  padding: 0 15px;
+  margin-top: 80px;
+  box-sizing: border-box;
+  background: #fbf4e4;
+}
+.main6 .store .search input {
+  width: 186px;
+  padding: 6px 10px;
+  font-size: 25px;
+  line-height: 50px;
+  font-weight: 700;
+  background: #fbf4e4;
+  color: #f43b00;
+  border: 0;
+  outline: 0;
+}
+.main6 .store .search input::placeholder {
+  color: #f43b00;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  font-weight: normal;
+}
+.main6 .store .search button {
+  width: 50px;
+  height: 63px;
+  background: #fbf4e4;
+}
+.main6 .store .search button::after {
+  content: "";
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  vertical-align: middle;
+  background: url(../images/icon_zoom.png);
+}
+footer {
+  width: 100%;
+  padding: 120px 76px;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+.foottop p {
+  float: left;
+}
+.foottop p img {
+  width: 192px;
+}
+.foottop > ul {
+  float: right;
+}
+.foottop > ul > li {
+  float: left;
+}
+.foottop > ul > li:nth-of-type(2) {
+  margin: 0 207px;
+}
+.foottop .maintitle {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.foottop .footmenu {
+  margin-top: 32px;
+}
+.foottop .footmenu li {
+  margin-top: 16px;
+}
+.foottop .footmenu li a {
+  line-height: 24px;
+  color: rgba(34, 34, 34, 0.7);
+}
+.foottop .footmenu li a span {
+  position: relative;
+}
+.foottop .footmenu li a span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #222;
+  width: 0;
+  height: 1px;
+  transition: width 0.5s;
+}
+.foottop .footmenu li a:hover span::after {
+  width: 100%;
+}
+.foottop .footmenu li a:hover span {
+  color: #222;
+}
+.foottop .footmenu .orange {
+  color: #ff592e;
+}
+.foottop .footmenu li a .orange::after {
+  background: #ff592e;
+}
+.foottop .footmenu li a:hover .orange {
+  color: #ff592e;
+}
+.footbot {
+  height: 256px;
+  margin-top: 52px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.footbot select {
+  position: relative;
+  width: 307px;
+  height: 87px;
+  margin-top: 23px;
+  border-bottom: 2px solid #222;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 87px;
+  text-align: left;
+  background: #fff url(../images/select-plus.svg) no-repeat 100% 50%;
+  background-size: 24px 24px;
+}
+.footbot select:focus {
+  outline: none;
+}
+.footbot > div {
+  float: right;
+}
+.footbot address {
+  width: 614px;
+  margin: 52px 0 35px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: rgba(34, 34, 34, 0.4);
+}
+.footbot address a {
+  color: #222;
+  font-weight: normal;
+}
+.footbot .playstore {
+  position: relative;
+}
+.footbot .playstore p {
+  float: left;
+}
+.footbot .playstore p .play {
+  display: block;
+  margin-right: 12px;
+  padding: 0 32px;
+  border: 1px solid rgba(34, 34, 34, 0.1);
+  border-radius: 25px;
+  font-weight: bold;
+  line-height: 50px;
+}
+.footbot .playstore p .play::before {
+  content: "";
+  display: inline-block;
+  margin-right: 13px;
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+}
+.footbot .playstore p:first-of-type a::before {
+  background: url(../images/apple.svg) no-repeat;
+}
+.footbot .playstore p:nth-of-type(2) a::before {
+  background: url(../images/google.svg) no-repeat;
+}
+.footbot .playstore p:last-of-type {
+  position: absolute;
+  top: -50%;
+  right: 106px;
+}
+.footbot .playstore p img {
+  width: 100px;
+}
